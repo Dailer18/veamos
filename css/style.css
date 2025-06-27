@@ -1,0 +1,53 @@
+/* Estilos Base del Cuerpo */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Tipografía de Encabezados */
+.headline {
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* Cursor Personalizado y Estela */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 215, 0, 0.5);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s;
+}
+
+.cursor-trail {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 215, 0, 0.3);
+    pointer-events: none;
+    z-index: 9998;
+    transition: opacity 0.5s;
+}
+
+/* ... y todos los demás estilos que tenías en tu bloque <style> ... */
+
+/* Estilos de Formulario */
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #DC143C;
+    box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.2);
+    outline: none;
+}
