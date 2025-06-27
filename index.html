@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythmic Motion | Dance Experience</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#DC143C',
+              secondary: '#0066FF'
+            },
+            borderRadius: {
+              'none': '0px',
+              'sm': '4px',
+              DEFAULT: '8px',
+              'md': '12px',
+              'lg': '16px',
+              'xl': '20px',
+              '2xl': '24px',
+              '3xl': '32px',
+              'full': '9999px',
+              'button': '8px'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-opacity-10 backdrop-blur-md bg-black">
+        </nav>
+
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-primary/20"></div>
+        <div class="absolute inset-0" style="background-image: url('assets/images/hero-background.jpg'); background-size: cover; background-position: center; opacity: 0.8; mix-blend-mode: soft-light;"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+        
+        <div class="container relative mx-auto px-6 z-10">
+            <div class="grid grid-cols-12 gap-8 items-center">
+                <div class="col-span-12 md:col-span-7 lg:col-span-6 relative">
+                    <h1 class="headline text-6xl md:text-8xl font-bold mb-8 leading-none">
+                        <span class="block text-white">Where</span>
+                        <span class="block text-primary mt-2">Movement</span>
+                        <span class="block text-white mt-2">Speaks</span>
+                    </h1>
+                    </div>
+                <div class="col-span-12 md:col-span-5 lg:col-span-6 relative">
+                    <div class="relative z-10 floating">
+                        <div class="aspect-[3/4] overflow-hidden rounded-2xl">
+                            <img src="assets/images/dancer-in-motion.jpg" alt="Dancer in motion" class="w-full h-full object-cover object-center scale-110 hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <footer class="bg-black py-12">
+        </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
